@@ -1,0 +1,7 @@
+services:
+  diet-bot:
+    build: .
+    container_name: diet-bot
+    env_file:
+      - .env
+    restart: unless-stopped
